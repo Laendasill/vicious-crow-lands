@@ -13,6 +13,7 @@
   ],
   "author": "Wojciech Bińka",
   "license": "MIT",
+  "private": "true",
   "devDependencies": {
     "gulp": "^3.9.0",
     "karma": "latest",
