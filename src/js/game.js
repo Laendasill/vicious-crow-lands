@@ -1,14 +1,17 @@
 var game = (function(){
     var  players   = []
-
         ,questions = [];
     function init(){
 
-    };
+    }
+
+    function addPlayer(player){
+      players.push(player);
+    }
   var module = {
     players: players,
-    init: init
-
+    init: init,
+    addPlayer: addPlayer
 
   };
 
