@@ -1,6 +1,6 @@
 var game = (function(){
     var  players   = []
-        ,questions = [];
+         ,questions = [];
     function init(){
 
     }
