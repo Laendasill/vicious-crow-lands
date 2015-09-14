@@ -10,8 +10,8 @@ describe("Player", function(){
     });
 
     it("have method ansers to return ansers as array", function(){
-      tquestion.anser1 = "it is it?";
-      tquestion.anser2 = "it is that?";
+      tquestion.ansers[0] = "it is it?";
+      tquestion.ansers[1] = "it is that?";
       expect(tquestion.ansers).toEqual(jasmine.arrayContaining(["it is it?","it is that?"]));
     });
 });

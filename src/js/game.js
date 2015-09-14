@@ -1,9 +1,11 @@
 var game = (function(){
     var  players   = []
-         ,questions = [];
+        ,questions = []
+         ;
     function init(){
 
     }
+
 
     function addPlayer(player){
       players.push(player);

@@ -1,10 +1,15 @@
 var question = (function(){
+  var question
+      ,ansers = []
+      ,correct = 0
+      ,//idk what to do
+  function fromJson(js){
 
-    
+  }
   var module = {
+
     question: "",
-    anser1: "",
-    anser2: "",
+    ansers: [],
     correct: 0
   };
 
