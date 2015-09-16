@@ -6,7 +6,7 @@ var questionLoader = (function(){
         xmlHttp.send( null );
         return xmlHttp.responseText;
   }
-  function getQuestions(url){
+  function publicgetQuestions(url){
     return [
       {
         "id": 0,
@@ -47,8 +47,8 @@ var questionLoader = (function(){
     ];
   }
 
-  var module {
-    getQuestions: getQuestions
-  };
-return module;
-});
+
+return {
+  getQuestions: publicgetQuestions
+};
+})();

@@ -2,7 +2,7 @@
   "name": "etnografia_gra",
   "version": "0.0.1",
   "description": "Quiz like game for kids ",
-  "main": "index.js",
+  "main": "cuteCrow.js",
   "scripts": {
     "test": "node node_modules\\karma\\bin\\karma start karma.conf.js"
   },

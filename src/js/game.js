@@ -1,6 +1,7 @@
 var game = (function(){
-    var  players   = []
-        ,questions = []
+  'use strict';
+    var  players   = [],
+         questions = []
          ;
     function init(){
 
@@ -10,15 +11,15 @@ var game = (function(){
     function addPlayer(player){
       players.push(player);
     }
-  var module = {
+
+
+
+  return {
     players: players,
     init: init,
     addPlayer: addPlayer
 
   };
-
-
-  return module;
 
 })();
 var cuteCrow = cuteCrow || {};

@@ -1,11 +1,12 @@
 var player = (function(){
-    var points = 0  //INT
-        ,name  = "gracz";   //String
+    var points = 0,  //INT
+        name  = "gracz"
+        ;   //String
 
-    function init() {
 
-    };
-    var module = {
+
+
+    return {
       init: init,
 
         // Testing private variables
@@ -13,8 +14,6 @@ var player = (function(){
       points: points,
       name:   name
     };
-
-    return module;
 })();
 
 var cuteCrow = cuteCrow || {};
