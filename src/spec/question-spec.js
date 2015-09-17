@@ -1,7 +1,7 @@
 describe("Player", function(){
     var tquestion;
      beforeEach(function(){
-       tquestion = Object.create(question);
+       tquestion = new cuteCrow.question(0);
     });
 
     it("Exists", function(){

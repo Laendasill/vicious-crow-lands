@@ -1,12 +1,14 @@
 
-class game {
-  constructor(players,questions){
+cuteCrow.game = class game {
+  constructor(players=[],questions=[]){
     this.players = players;
     this.questions = questions;
   }
+  init(){
 
+  }
   addPlayer(player){
-    this.players += player;
+    this.players.push(player);
   }
   removePlayer(player){
     var todel = this.players.map(function(el){
@@ -18,33 +20,4 @@ class game {
     throw "not implemented";
 
   }
-}
-export default game;
-/*
-var game = (function(){
-  'use strict';
-    var  players   = [],
-         questions = []
-         ;
-    function init(){
-
-    }
-
-
-    function addPlayer(player){
-      players.push(player);
-    }
-
-
-
-  return {
-    players: players,
-    init: init,
-    addPlayer: addPlayer
-
-  };
-
-})();
-var cuteCrow = cuteCrow || {};
-cuteCrow.game = game;
-*/
+};
