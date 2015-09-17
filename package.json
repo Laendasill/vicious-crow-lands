@@ -14,12 +14,13 @@
   "author": "Wojciech Bińka",
   "license": "MIT",
   "private": "true",
-  "jshintConfig": {
-    "laxcomma": false
-  },
   "devDependencies": {
     "gulp": "^3.9.0",
+    "gulp-babel": "^5.2.1",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-watch": "^4.3.5",
     "karma": "latest",
+    "karma-babel-preprocessor": "^5.2.2",
     "karma-chrome-launcher": "^0.2.0",
     "karma-cli": "^0.1.0",
     "karma-firefox-launcher": "^0.1.6",

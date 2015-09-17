@@ -1,20 +1,7 @@
-var player = (function(){
-    var points = 0,  //INT
-        name  = "gracz"
-        ;   //String
-
-
-
-
-    return {
-      init: init,
-
-        // Testing private variables
-
-      points: points,
-      name:   name
-    };
-})();
-
-var cuteCrow = cuteCrow || {};
-cuteCrow.player = player;
+cuteCrow.player = class player {
+  constructor(points=0,name="", id=null){
+    this.id = id;
+    this.points = points;
+    this.name = name;
+  }
+};
