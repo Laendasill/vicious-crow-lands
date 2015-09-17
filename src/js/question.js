@@ -20,5 +20,4 @@ var question = (function(){
   };
 })();
 */
-
-cuteCrow.question = question;
+export default question;

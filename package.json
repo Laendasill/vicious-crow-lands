@@ -15,8 +15,10 @@
   "license": "MIT",
   "private": "true",
   "devDependencies": {
+    "babelify": "^6.3.0",
     "gulp": "^3.9.0",
     "gulp-babel": "^5.2.1",
+    "gulp-sourcemaps": "^1.5.2",
     "karma": "latest",
     "karma-babel-preprocessor": "^5.2.2",
     "karma-chrome-launcher": "^0.2.0",

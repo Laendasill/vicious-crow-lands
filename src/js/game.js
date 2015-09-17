@@ -19,7 +19,7 @@ class game {
 
   }
 }
-cuteCrow.game = game;
+export default game;
 /*
 var game = (function(){
   'use strict';

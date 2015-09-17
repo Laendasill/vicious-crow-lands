@@ -26,4 +26,4 @@ var player = (function(){
 
 var cuteCrow = cuteCrow || {};
 */
-cuteCrow.player = player;
+export default player;
