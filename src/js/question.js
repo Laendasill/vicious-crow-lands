@@ -1,3 +1,7 @@
+class question{
+
+}
+/*
 var question = (function(){
   var question,
       ansers = [],
@@ -15,6 +19,6 @@ var question = (function(){
     correct: 0
   };
 })();
+*/
 
-var cuteCrow = cuteCrow || {};
 cuteCrow.question = question;
