@@ -7,8 +7,7 @@ cuteCrow.quizElement = class quizElement{
     this.correct = correct;
   }
   static fromObject(object){
-    if(object.hasOwnProperty('id') && object.hasOwnProperty('question') &&
-      object.hasOwnProperty('ansers') && object.hasOwnProperty('correct')){
+    if(cuteCrow.utils.validateObject(object,["question","id","ansers","correct"])){
       return new cuteCrow.quizElement(object.id,object.question,object.ansers,object.correct);
     }else{
       return false;

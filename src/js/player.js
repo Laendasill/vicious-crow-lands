@@ -1,8 +1,8 @@
 var cuteCrow = cuteCrow || {};
 cuteCrow.player = class player {
-  constructor(points=0,name="", id=null){
+  constructor(name="", id=null){
     this.id = id;
-    this.points = points;
+    this.points = 0;
     this.name = name;
   }
 };
