@@ -1,4 +1,4 @@
-
+var cuteCrow = cuteCrow || {};
 cuteCrow.game = class game {
   constructor(players=[],questions=[]){
     this.players = players;

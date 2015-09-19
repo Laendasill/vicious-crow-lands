@@ -1,3 +1,4 @@
+var cuteCrow = cuteCrow || {};
 cuteCrow.quizElement = class quizElement{
   constructor(id,question="",ansers=[],correct=0){
     this.id = id;
@@ -6,19 +7,16 @@ cuteCrow.quizElement = class quizElement{
     this.correct = correct;
   }
   static fromObject(object){
-    if(this.validateObject(object)){
-      return new this(object.id,object.question,object.ansers,object.correct);
+    if(object.hasOwnProperty('id') && object.hasOwnProperty('question') &&
+      object.hasOwnProperty('ansers') && object.hasOwnProperty('correct')){
+      return new cuteCrow.quizElement(object.id,object.question,object.ansers,object.correct);
+    }else{
+      return false;
     }
   }
 
-  static validateObject(o){ // I should move it to some helper class or something
-    if(o.hasOwnProperty('id') && o.hasOwnProperty('question') &&
-      o.hasOwnProperty('ansers') && o.hasOwnProperty('correct')){
-        return true;
-      } else {
-        return false;
-      }
-  }
+
+
 };
 /*
 var question = (function(){

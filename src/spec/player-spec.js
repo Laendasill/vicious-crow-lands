@@ -1,10 +1,10 @@
-describe("Player", function(){
+describe("Player", () =>{
     var tplayer;
-     beforeEach(function(){
+     beforeEach(() =>{
        tplayer = new cuteCrow.player(0);
     });
 
-    it("Exists", function(){
+    it("Exists", () =>{
 
        expect(typeof tplayer).toEqual("object") ;
     });
