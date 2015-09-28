@@ -17,7 +17,9 @@ cuteCrow.game = class game {
 
       }
     });
-    throw "not implemented";
-
+    if (todel > -1){
+      this.players.splice(todel,1);
+    }
   }
+
 };

@@ -19,4 +19,10 @@ describe("Game", () =>{
     tgame.addPlayer(tplayer);
     expect(tgame.players.length).toBe(1);
   });
+  it("can remoce players", ()=>{
+    var tplayer =  new cuteCrow.player("player");
+    tgame.addPlayer(tplayer);
+    tgame.removePlayer("player");
+    expect(tgame.players.length).toBe(0);
+  });
 });
