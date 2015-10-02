@@ -14,4 +14,8 @@ cuteCrow.utils = class utils {
       return true;
     }
   }
+
+  static findQuestion(question){
+    
+  }
 };
