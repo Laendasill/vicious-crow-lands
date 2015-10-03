@@ -8,7 +8,7 @@ cuteCrow.clock = class clock {
   }
   run(){
     this.ticking = true;
-    this.intervalid = setInterval(this.tick,this.second);
+    this.intervalid = setInterval(()=>{this.tick()},this.second);
   }
   tick(){
     if(this.timeLimit == 0){
