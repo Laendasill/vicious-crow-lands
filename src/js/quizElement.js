@@ -1,5 +1,5 @@
 var cuteCrow = cuteCrow || {};
-cuteCrow.quizElement = class quizElement{
+cuteCrow.quizElement = class quizElement{ // NOTE: This sould be an abstract class, but currently I'm not sure how is supposed to look.
   constructor(id,question="",ansers=[],correct=0){
     this.id = id;
     this.question = question;
