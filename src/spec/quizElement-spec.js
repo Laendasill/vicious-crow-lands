@@ -6,7 +6,7 @@ describe("quizElement", () =>{
 
     it("Exists", () =>{
 
-       expect(tquestion instanceof Object).toBe(true);
+       expect(tquestion).toEqual(jasmine.anything());
     });
 
     it("have method ansers to return ansers as array", () =>{

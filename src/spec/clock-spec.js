@@ -1,13 +1,10 @@
 describe("Clock", () => {
-  var tclock, runSpy;
+  var tclock;
   beforeEach(() =>{
 
-     tclock = new cuteCrow.clock(2);
-     runSpy = {
-       tick: tclock.tick,
-       run: tclock.run
-     };
-     spyOn(runSpy, 'tick');
+     tclock = new cuteCrow.clock(1);
+
+
      jasmine.clock().install();
   });
   afterEach(function() {
@@ -31,11 +28,9 @@ describe("Clock", () => {
     tclock.end();
     expect(tclock.ticking).toEqual(false);
   });
-  it("ticks",()=>{
+  it("stops afer specified time",()=>{
     tclock.run();
-    jasmine.clock().tick(1000);
-    expect(runSpy.tick).toHaveBeenCalled();
-
+    jasmine.clock().tick(2001);
     expect(tclock.ticking).toEqual(false);
   });
 });

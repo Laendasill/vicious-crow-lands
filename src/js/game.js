@@ -32,4 +32,8 @@ cuteCrow.game = class game {
     }
   }
 
+  nextQuestion(){
+    this.currentQuestion = this.questions[this.currentQuestion.id + 1];
+  };
+
 };
