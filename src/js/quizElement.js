@@ -13,6 +13,13 @@ cuteCrow.quizElement = class quizElement{ // NOTE: This sould be an abstract cla
       return false;
     }
   }
+  static validateAnser(anser,currentQuestion){ // NOTE: This function is really specific it hould be in diffrent class
+    if(anser == currentQuestion.correct){
+      return true;
+    } else {
+      return false;
+    }
+  }
 
 
 
