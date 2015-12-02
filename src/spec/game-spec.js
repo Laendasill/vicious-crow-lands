@@ -1,5 +1,5 @@
 
-describe("Game", () =>{
+xdescribe("Game", () =>{
     var tgame;
     beforeEach(() =>{
        tgame = new cuteCrow.game();

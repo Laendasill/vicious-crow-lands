@@ -14,4 +14,14 @@ describe("utils", () => {
                         "cat": "com"};
         expect(cuteCrow.utils.validateObject(badobject,["dog","cat","dfw"])).toBe(false);
   });
+  it("can find and remove elements from array of objects", ()=>{
+    var players = [{name: "cat"}, {name: "man"},{name: "last"}];
+    cuteCrow.utils.findAndDelete("name","man",players);
+    expect(players.length).toEqual(2);
+  });
+  it("can find and remove last element", ()=>{
+    var players = [{name: "cat"}, {name: "man"},{name: "last"}];
+    cuteCrow.utils.findAndDelete("name","last",players);
+    expect(players.length).toEqual(2);
+  });
 });

@@ -5,10 +5,8 @@ cuteCrow.game = class game {
     if(questions == null || questions.length == 0){
       throw "questions array can't be null or empty";
     }
-    this.players = [];
+    this.players = new cuteCrow.Players();
     this.questions = new cuteCrow.Iterator(questions);
-    this.currentQuestion = null;
-    this.currentPlayer = null;
     this.timeLimit = timeLimit;
     this.clock = null;
     this.chosen = null; //question specific variable for selected anser
@@ -27,29 +25,18 @@ cuteCrow.game = class game {
       this.clock = new cuteCrow.clock(this.timeLimit);
     }
 
-    this.currentQuestion = this.questions.current();
-    this.currentPlayer = players[0];
-    this.clock.run(); // this should be in startgame function
+  
+  //  this.clock.run(); // this should be in startgame function
   }
-  addPlayer(name){
-    var player = new cuteCrow.player(name);
-    player.id = this.players.length;
-    this.players.push(player);
-  }
-  removePlayer(player){
-    var todel = this.players.map(function(el){
-      if (el.id === player.id){
-        return el.id;
-
-      }
-    });
-    if (todel > -1){
-      this.players.splice(todel,1);
+  start(){
+    if(this.clock !== null){
+      this.clock.run();
     }
   }
 
-  nextQuestion(){
-    this.currentQuestion = this.questions.next();
+  update(){
+    this.players.update();
+    this.questions.next();
   };
 
   debugInfo(){

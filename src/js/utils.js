@@ -15,7 +15,17 @@ cuteCrow.utils = class utils {
     }
   }
 
-  static findQuestion(question){
-    
+  static findAndDelete(key,val,collection){
+    var i = 0;
+    for(i = 0; i < collection.length; i+=1){
+      var el = collection[i];
+      console.log(i);
+      if (el[key] === val){
+        collection.splice(i,1);
+        return;
+      }
+
+    }
+
   }
 };

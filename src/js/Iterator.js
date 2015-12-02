@@ -3,20 +3,33 @@ cuteCrow.Iterator = class Iterator {
   constructor(collection  = []){
     this.index = 0;
     this.collection = collection;
-    this.size = this.collection.length;
+
   }
   hasNext(){
-    return this.index < this.size - 1 ;
+    return this.index < this.collection.length - 1 ;
+  }
+  revind(){
+    this.index=0;
   }
   next(){
     if (this.hasNext() == false){
-        return null;
+      return null;
     } else {
-    this.index += 1;
-    return this.collection[this.index];
+      this.index += 1;
+      return this.collection[this.index];
     }
   }
   current(){
     return this.collection[this.index];
   }
+  removeElement(name){
+    cuteCrow.utils.findAndDelete("name",name,this.collection);
+  }
+  addToCollection(val){
+     this.collection.push(val);
+  }
+    //*For testing*//
+    getColletion(){
+      return this.collection
+    }
 }
